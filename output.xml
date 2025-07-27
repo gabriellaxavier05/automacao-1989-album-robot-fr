@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-27T20:48:18.355748" rpa="false" schemaversion="5">
+<suite id="s1" name="Wiki Test" source="C:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\Autodidata\Testes - QA\Testes realizados\Automacao\Robot Framework\automacao-1989-album-robot-fr\wiki_test.robot">
+<test id="s1-t1" name="Abrir página da Wikipedia e verificar título" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:48:19.563102" level="INFO">Opening browser 'Chrome' to base url 'https://pt.wikipedia.org/wiki/1989_(%C3%A1lbum_de_Taylor_Swift)'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-27T20:48:19.561794" elapsed="6.323484"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-27T20:48:25.886418" elapsed="0.392047"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:48:26.373611" level="INFO">Current page contains text '1989 (álbum de Taylor Swift)'.</msg>
+<arg>${TEXTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-27T20:48:26.279214" elapsed="0.094621"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:49:16.377037" level="INFO">Slept 50 seconds.</msg>
+<arg>50s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:48:26.374409" elapsed="50.003057"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:48:19.553121" elapsed="56.825153"/>
+</test>
+<status status="PASS" start="2025-07-27T20:48:18.360582" elapsed="58.020049"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Wiki Test" id="s1" pass="1" fail="0" skip="0">Wiki Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
