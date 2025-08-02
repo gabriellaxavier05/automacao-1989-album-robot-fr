@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-27T20:48:18.355748" rpa="false" schemaversion="5">
-<suite id="s1" name="Wiki Test" source="C:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\Autodidata\Testes - QA\Testes realizados\Automacao\Robot Framework\automacao-1989-album-robot-fr\wiki_test.robot">
-<test id="s1-t1" name="Abrir página da Wikipedia e verificar título" line="10">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-08-02T01:46:37.378265" rpa="false" schemaversion="5">
+<suite id="s1" name="Wiki Test" source="c:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\Autodidata\Testes - QA\Testes realizados\Automacao\Robot Framework\automacao-1989-album-robot-fr\wiki_test.robot">
+<test id="s1-t1" name="Direcionar para a página sobre a Taylor Swift" line="31">
+<kw name="Abrir Página da Wikipedia">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-27T20:48:19.563102" level="INFO">Opening browser 'Chrome' to base url 'https://pt.wikipedia.org/wiki/1989_(%C3%A1lbum_de_Taylor_Swift)'.</msg>
+<msg time="2025-08-02T01:46:37.831780" level="INFO">Opening browser 'Chrome' to base url 'https://pt.wikipedia.org/wiki/1989_(%C3%A1lbum_de_Taylor_Swift)'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-27T20:48:19.561794" elapsed="6.323484"/>
+<status status="PASS" start="2025-08-02T01:46:37.831309" elapsed="3.865035"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-27T20:48:25.886418" elapsed="0.392047"/>
+<status status="PASS" start="2025-08-02T01:46:41.696922" elapsed="0.360774"/>
+</kw>
+<status status="PASS" start="2025-08-02T01:46:37.829488" elapsed="4.228542"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-08-02T01:46:42.059433" level="INFO">Clicking link 'Taylor Swift'.</msg>
+<arg>Taylor Swift</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T01:46:42.058676" elapsed="1.291726"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-07-27T20:48:26.373611" level="INFO">Current page contains text '1989 (álbum de Taylor Swift)'.</msg>
-<arg>${TEXTO}</arg>
+<msg time="2025-08-02T01:46:43.543293" level="INFO">Current page contains text 'Taylor Swift'.</msg>
+<arg>${TITULO_TS}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-07-27T20:48:26.279214" elapsed="0.094621"/>
+<status status="PASS" start="2025-08-02T01:46:43.353765" elapsed="0.189771"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-27T20:49:16.377037" level="INFO">Slept 50 seconds.</msg>
-<arg>50s</arg>
+<msg time="2025-08-02T01:46:53.544745" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-27T20:48:26.374409" elapsed="50.003057"/>
+<status status="PASS" start="2025-08-02T01:46:43.544083" elapsed="10.001007"/>
 </kw>
-<status status="PASS" start="2025-07-27T20:48:19.553121" elapsed="56.825153"/>
+<status status="PASS" start="2025-08-02T01:46:37.828223" elapsed="15.717524"/>
 </test>
-<status status="PASS" start="2025-07-27T20:48:18.360582" elapsed="58.020049"/>
+<status status="PASS" start="2025-08-02T01:46:37.385830" elapsed="16.161948"/>
 </suite>
 <statistics>
 <total>
